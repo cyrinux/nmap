@@ -1583,16 +1583,7 @@ func WithGrepOutput(outputFileName string) Option {
 	}
 }
 
-// ReturnArgs return the list of nmap args
+// ReturnArgs return the list of nmap args.
 func (s *Scanner) Args() []string {
 	return s.args
-}
-
-// PrintArgs print the nmap args
-func (s *Scanner) PrintArgs() string {
-	args := strings.Join(s.args, " ")
-
-	fmt.Print(args)
-
-	return args
 }
